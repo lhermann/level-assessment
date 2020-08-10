@@ -14,7 +14,7 @@ function shortcode_level_assessment_func($atts) {
 
   if (
     isset($_POST['la_name']) ||
-    (isset($_SESSION['identity']['name']) && $_SESSION['identity']['name'])
+    (isset($_SESSION['identity']['ID']) && $_SESSION['identity']['ID'])
   ) {
     require('html-questions.php');
   } else {

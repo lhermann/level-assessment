@@ -34,6 +34,7 @@ if( isset($_POST['la_name']) && $_POST['la_name'] != ""  ) { // If a new session
 } else { // Otherwise someone is cheating
 
   $problem = 'cheating';
+  $_SESSION['identity']['ID'] = null;
 }
 
 
