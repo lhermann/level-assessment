@@ -1,0 +1,413 @@
+[
+    {
+        "key": "group_5f31754043ade",
+        "title": "Age, Level and Language",
+        "fields": [
+            {
+                "key": "field_54d503e7e1b8d",
+                "label": "Age",
+                "name": "age",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "age",
+                "field_type": "radio",
+                "allow_null": 0,
+                "return_format": "object",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 1
+            },
+            {
+                "key": "field_54d50412e1b8e",
+                "label": "Language",
+                "name": "language",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "language",
+                "field_type": "radio",
+                "allow_null": 0,
+                "return_format": "object",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 1
+            },
+            {
+                "key": "field_54d50444e1b8f",
+                "label": "Level",
+                "name": "level",
+                "type": "taxonomy",
+                "instructions": "Only for Level Assessment Screen. Use Title for Course Information.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "level",
+                "field_type": "select",
+                "allow_null": 1,
+                "return_format": "object",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "lainfo"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f3175404b3f6",
+        "title": "Level and Language",
+        "fields": [
+            {
+                "key": "field_545d2775f87f4",
+                "label": "Language",
+                "name": "language",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "language",
+                "field_type": "radio",
+                "allow_null": 0,
+                "return_format": "object",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 1
+            },
+            {
+                "key": "field_545d2529d89d5",
+                "label": "Required for Level ...",
+                "name": "level",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "level",
+                "field_type": "radio",
+                "allow_null": 0,
+                "return_format": "object",
+                "multiple": 0,
+                "add_term": 1,
+                "load_terms": 0,
+                "save_terms": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "laq"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f3175404ffea",
+        "title": "Level Assessment Questions",
+        "fields": [
+            {
+                "key": "field_5461100f15d6b",
+                "label": "Question Text",
+                "name": "question",
+                "type": "textarea",
+                "instructions": "Use <code>%%blank%%<\/code> as a placeholder for \"fill in the blank\" questions.\r\nFor <strong>bold<\/strong> text use <code>&lt;b&gt;text&lt;\/b&gt;<\/code>",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Example: The car is %%blank%%.",
+                "maxlength": 400,
+                "rows": 2,
+                "new_lines": "br"
+            },
+            {
+                "key": "field_545d1edba1097",
+                "label": "Type of Question",
+                "name": "type_of_question",
+                "type": "select",
+                "instructions": "For \"Fill in the Blank\" questions, the <code>%%blank%%<\/code> placeholder will be replaced with a dropdown menu.\r\nProvide at least two answer options. You do not need to provide all five. Empty options will be ignored.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "choice": "Multiple Choice",
+                    "blank": "Fill in the Blank"
+                },
+                "default_value": "choice",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_545d29506d82f",
+                "label": "Correct Answers",
+                "name": "correct_answers",
+                "type": "radio",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": "Option 1",
+                    "2": "Option 2",
+                    "3": "Option 3",
+                    "4": "Option 4",
+                    "5": "Option 5"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "allow_null": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_545d27b526104",
+                "label": "Option 1",
+                "name": "option_1",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "1.",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 200
+            },
+            {
+                "key": "field_545d27eb26105",
+                "label": "Option 2",
+                "name": "option_2",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "2.",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 200
+            },
+            {
+                "key": "field_545d29286d82c",
+                "label": "Option 3",
+                "name": "option_3",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "3.",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 200
+            },
+            {
+                "key": "field_545d29306d82d",
+                "label": "Option 4",
+                "name": "option_4",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "4.",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 200
+            },
+            {
+                "key": "field_545d293b6d82e",
+                "label": "Option 5",
+                "name": "option_5",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "5.",
+                "append": "",
+                "formatting": "html",
+                "maxlength": 200
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "laq"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5f3175405dc1a",
+        "title": "Level Info",
+        "fields": [
+            {
+                "key": "field_54d5054e19424",
+                "label": "For the Level Assessment Screen",
+                "name": "level_assessment_screen",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            },
+            {
+                "key": "field_54c94ad3d2980",
+                "label": "Alternative Time",
+                "name": "alternative_time",
+                "type": "textarea",
+                "instructions": "Each line will be an available option to choose",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 8,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "lainfo"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    }
+]

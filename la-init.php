@@ -37,6 +37,8 @@ add_action( 'admin_enqueue_scripts', 'joelmedia_admin_scripts' );
  */
 add_action( 'init', 'register_level_assessment_questions' );
 function register_level_assessment_questions() {
+	setup_session();
+
 	$labels = array(
 		'name'               => _x( 'Level Assessment Questions', 'post type general name', 'level-assessment' ),
 		'singular_name'      => _x( 'Level Assessment Question', 'post type singular name', 'level-assessment' ),
@@ -74,7 +76,7 @@ function register_level_assessment_questions() {
 	);
 
 	register_post_type( 'laq', $args );
-	
+
 	$labels = array(
 		'name'               => _x( 'Level Information', 'post type general name', 'level-assessment' ),
 		'singular_name'      => _x( 'Level Information', 'post type singular name', 'level-assessment' ),

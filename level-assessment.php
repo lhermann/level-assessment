@@ -43,6 +43,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 require_once( 'conf.php' );
 
 /*
+ * Includes
+ */
+require_once('inc/acf-fields.php');
+require_once('inc/shortcode-level-assessment.php');
+require_once('inc/shortcode-courses.php');
+
+/*
  * Controll which ones are the open levels from the available ones
  * eg.: 2 -> open: basic-1, basic-2, closed: intermediate-1 usw...
  * @since 1.0
@@ -166,8 +173,9 @@ function la_get_available_languages( $key = NULL, $value = NULL ) {
  * @since 1.0
  */
 function setup_session_variable( $language = false, $level = false, $force = false ) {
-	if ( !isset($_SESSION) ) session_start();
+	if ( !isset($_SESSION) ) return;
 	if ( isset( $_SESSION[$language][$level] ) && !$force ) return;
+
 	$questions_total 	= QUESTIONS_TOTAL; // total number of question per level
 	$questions_min		= QUESTIONS_MIN; // minmum correct questions to advance
 
@@ -819,8 +827,15 @@ function update_session() {
  * @since 1.0
  */
 function setup_session() {
-	if ( !isset($_SESSION) ) session_start();
-	set_default ( $_SESSION['count'], 0 );
+	if (!isset($_SESSION)) session_start();
+	// If a new session is needed
+	if (isset($_POST['la_name']) && $_POST['la_name'] != "") {
+		unset($_SESSION);
+		session_destroy();
+		session_start();
+	}
+
+	set_default($_SESSION['count'], 0);
 	$_SESSION['count']++;
 	$_SESSION['time'] = time();
 	set_default ( $_SESSION['identity'], array(
@@ -839,8 +854,7 @@ function setup_session() {
  * @update 1.2
  */
 function la_database_query( $operation, $level = NULL, $value = NULL ) {
-	if ( !isset($_SESSION) ) session_start();
-	global $wpdb;
+	global $wpdb, $_SESSION;
 	$return = true;
 	$table_name = $wpdb->prefix.'level_assessment';
 	//var_dump( 'POST variable', $_POST );
