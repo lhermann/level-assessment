@@ -160,7 +160,7 @@ class LA_List_Table extends WP_List_Table {
 		$args = wp_parse_args( $_GET );
 
 		$selected = isset( $args['semester'] ) ? $args['semester'] : false;
-		$previous = isset( $args['semester'] ) ? $args['semester'] : date( 'Y' ).'-'.($i%2 ? '2' : '1');
+		$previous = isset( $args['semester'] ) ? $args['semester'] : date( 'Y' );
 		?>
 		<div class="alignleft actions">
 			<form id="posts-filter" method="get" action="<?= $_SERVER['REQUEST_URI'] ?>">

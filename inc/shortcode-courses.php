@@ -4,7 +4,7 @@
  */
 function shortcode_level_assessment_courses_func($atts) {
   global $wp, $la_config;
-  if (isset($wp->query_vars['rest_route'])) return;
+  if (isset($wp->query_vars['rest_route']) || is_admin()) return;
 
   $la_config = shortcode_atts( array(
     'title' => 'Cursos',
