@@ -49,6 +49,34 @@ require_once('inc/acf-fields.php');
 require_once('inc/shortcode-level-assessment.php');
 require_once('inc/shortcode-courses.php');
 
+
+/*
+ * Create the Database when the Plugin is activated
+ * @since 1.0
+ */
+register_activation_hook( __FILE__, 'la_db_install' );
+function la_db_install ( $table_name ) {
+	global $wpdb;
+	$table_name = $wpdb->prefix.'level_assessment';
+	$charset_collate = $wpdb->get_charset_collate();
+	$sql = "CREATE TABLE $table_name (
+		ID bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+		time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+		type varchar(20) DEFAULT 'test' NOT NULL,
+		name tinytext NOT NULL,
+		email tinytext NOT NULL,
+		language varchar(20) DEFAULT '' NOT NULL,
+		level varchar(20) DEFAULT '' NOT NULL,
+		value tinytext NOT NULL,
+		UNIQUE KEY ID (ID)
+	) $charset_collate;";
+	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+	dbDelta( $sql );
+	add_option( "la_db_version", "1.0" );
+	return true;
+}
+
+
 /*
  * Controll which ones are the open levels from the available ones
  * eg.: 2 -> open: basic-1, basic-2, closed: intermediate-1 usw...
