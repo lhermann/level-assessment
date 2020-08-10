@@ -1,0 +1,32 @@
+.post-type-laq .wp-list-table .column-title,
+.post-type-lainfo .wp-list-table .column-title {
+	width: 40%;
+}
+.wp_list_la_results .column-name,
+.wp_list_la_times .column-name {
+	width: 30%;
+}
+.wp_list_la_results .column-language,
+.wp_list_la_times .column-language,
+.wp_list_la_results .column-level,
+.wp_list_la_times .column-level {
+	width: 10%;
+}
+.button .dashicons {
+	line-height: inherit;
+}
+#print-csv-button, #print-page-button {
+	font-size: 14px;
+	line-height: 30px;
+	height: 32px;
+}
+
+@media print {
+	#adminmenuback, 
+	#adminmenuwrap, 
+	#wpadminbar, 
+	#print-csv-button, #print-page-button { 
+		display: none;
+	}
+	#wpcontent { margin-left: 0; }
+}

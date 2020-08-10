@@ -1,0 +1,222 @@
+/* General
+--------------------------------------------------------*/
+body.single-laq .site-content {
+	width: 100%;
+}
+.btn-lg .dashicons {
+	font-size: inherit;
+	line-height: inherit;
+}
+.preloader-box,
+.preloader:before {
+	display: inline-block;
+	width: 64px;
+	height: 20px;
+	vertical-align: text-top;
+}
+.preloader:before {
+	content: '';
+	background: url(../img/preloader.gif) no-repeat center #fff;
+}
+
+.preloader-window.preloader > * {
+	opacity: .5;
+}
+.preloader-window.preloader:before {
+	position: absolute;
+	z-index: 1;
+	border: #e5e5e5 solid 1px;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 120px;
+	height: 60px;
+	left: 50%;
+	top: 50%;
+	margin: -30px 0 0 -60px;
+}
+/* Labels */
+.label.label-unstress { background: none; }
+.label.label-default { border: 1px solid #aaa; } .label.label-default.label-unstress { color: #aaa; }
+.label.label-primary { border: 1px solid #337ab7; } .label.label-primary.label-unstress { color: #337ab7; }
+.label.label-success { border: 1px solid #5cb85c; } .label.label-success.label-unstress { color: #5cb85c; }
+.label.label-danger { border: 1px solid #d9534f; } .label.label-danger.label-unstress { color: #d9534f; }
+
+/* Modal
+--------------------------------------------------------*/
+.modal-title {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 8px;
+}
+.modal-header .progress {
+	width: 200px;
+	display: inline-block;
+	margin: 0;
+}
+.modal-body {
+	min-height: 120px;
+}
+.modal-backdrop {
+	position: fixed;
+}
+.modal-meta {
+	margin: 10px -15px -15px -15px;
+	background-color: #efefef;
+	padding: 12px 15px;
+	border-top: 1px solid #e5e5e5;
+}
+i.modal-divider {
+	display: block;
+	width: auto;
+	height: 1px;
+	background-color: #e5e5e5;
+	margin: 10px -15px;
+}
+.level-indicator {
+	font-size: .8em;
+}
+
+/* Question Screens
+--------------------------------------------------------*/
+.level-instruction-screen {
+	margin: 0 20px;
+	font-weight: 300;
+}
+.la-completed {
+	background-color: green;
+	display: inline-block;
+	border-radius: 500px;
+	margin: 20px;
+}
+.la-completed .dashicons { color: white; }
+.level-responce-screen { margin: 8px 0; }
+@media only screen and (min-width:768px) { /* not phone */
+	.la-completed .dashicons {
+		font-size: 120px;
+		width: 120px;
+		height: 120px;
+	}
+	.level-responce-screen { margin: 22px 0; }
+}
+.laq-question {
+	margin: 30px 0 40px;
+	text-align: left;
+}
+
+.laq-choice {
+	border-color: #ccc;
+	white-space: normal;
+}
+
+.laq-choice:hover {
+	border-color: #398439;
+}
+
+.laq-choice:active, .laq-choice:focus, .laq-choice.active {
+	border-color: #398439;
+	background-color: #5cb85c;
+	color: #fff;
+}
+.laq-dropdown {
+	min-width: 160px;
+	margin: 0 6px;
+}
+.laq-dropdown.active {
+	background-color: #5cb85c;
+	color: #fff;
+}
+.la-progress-saved {
+	color: green;
+	margin-top: 7px;
+}
+/*.la-better-time-container .panel-success { border-color: green; }*/
+.la-better-time-container .dashicons {
+	color: green;
+	line-height: 1.3em;
+	font-size: 2em;
+	width: 30px;
+}
+/* Sign Up Info */
+.la-info {
+	margin-top: 20px;
+}
+
+/* Level Assessment Page
+--------------------------------------------------------*/
+.choose-level-buttons {
+	position: relative;
+}
+.choose-level-buttons>p {
+	position: relative;
+	margin-bottom: 16px;
+}
+.choose-level-buttons>p:after {
+	content: '';
+	position: absolute;
+	bottom: -16px;
+	left: 50%;
+	margin-left: -2px;
+	width: 4px;
+	height: 16px;
+	background: #ccc;
+}
+.choose-level-buttons>p.level-passed:after { background-color: #4cae4c }
+.choose-level-buttons>p.level-failed:after { background-color: #d9534f }
+.choose-level-buttons>p:last-child:after { display: none; }
+.btn.btn-locked {
+	background-color: #bbb;
+}
+.button-level .btn.btn-locked:before,
+.button-level .btn.btn-success:before,
+.button-level .btn.btn-danger:before {
+	content: '\f160';
+	font-family: dashicons;
+	speak: none;
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none !important;
+}
+.button-level .btn.btn-success:before { content: "\f147"; }
+.button-level .btn.btn-danger:before { content: "\f158"; }
+/* tooltip */
+.choose-level-buttons .btn { position: relative; }
+.choose-level-buttons .tooltip {
+	right: 100%;
+	margin-right: 3px;
+	filter: alpha(opacity=1);
+	opacity: 1;
+}
+
+/* Level Assessment Entry Page
+--------------------------------------------------------*/
+.laentry-icon {
+	font-size: 240px;
+	width: 240px;
+	height: 240px;
+	overflow: visible;
+	color: #337ab7;
+}
+.la-form .btn {
+	margin-bottom: 8px;
+}
+.tap-pane-languages {
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

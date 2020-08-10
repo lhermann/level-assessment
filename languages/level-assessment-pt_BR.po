@@ -1,0 +1,527 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Level Assessment\n"
+"POT-Creation-Date: 2016-02-03 10:39-0300\n"
+"PO-Revision-Date: 2016-02-03 13:20-0300\n"
+"Last-Translator: Lukas Hermann <luke.antix@gmail.com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../download-as-csv.php:15 ../la-admin-page.php:132 ../la-admin-page.php:417
+msgid "Name"
+msgstr "Nome"
+
+#: ../download-as-csv.php:16 ../la-admin-page.php:133 ../la-admin-page.php:418
+#: ../level-assessment.php:785
+msgid "Email"
+msgstr "E-mail"
+
+#: ../download-as-csv.php:17 ../la-admin-page.php:134 ../la-admin-page.php:419
+msgid "Language"
+msgstr "Idioma"
+
+#: ../download-as-csv.php:18 ../la-admin-page.php:135 ../la-admin-page.php:420
+msgid "Level"
+msgstr "Nível"
+
+#: ../download-as-csv.php:19 ../la-admin-page.php:136 ../la-admin-page.php:422
+msgid "Date"
+msgstr "Data"
+
+#: ../la-admin-page.php:60 ../la-admin-page.php:80
+msgid "Level Assessment List"
+msgstr "Lista de Nivelamento"
+
+#: ../la-admin-page.php:61
+msgid "Level Assessment"
+msgstr "Teste de Nivelamento"
+
+#: ../la-admin-page.php:82 ../la-admin-page.php:370
+msgid "Download as Spreadsheet"
+msgstr "Download de Planilha"
+
+#: ../la-admin-page.php:83 ../la-admin-page.php:371
+msgid "Print"
+msgstr "Imprimir"
+
+#: ../la-admin-page.php:168
+msgid "Filter by Semester"
+msgstr "Filtrar por Semestre"
+
+#: ../la-admin-page.php:170
+msgid "All Semesters"
+msgstr "Todos os Semestres"
+
+#: ../la-admin-page.php:350 ../la-admin-page.php:369
+msgid "List of requested times"
+msgstr "Lista de horários solicitados"
+
+#: ../la-admin-page.php:351
+msgid "Requested Times"
+msgstr "Horários solicitados"
+
+#: ../la-admin-page.php:421
+msgid "Requested Time"
+msgstr "Horários solicitados"
+
+#: ../la-init.php:41
+msgctxt "post type general name"
+msgid "Level Assessment Questions"
+msgstr "Perguntas Teste de Nivelamento"
+
+#: ../la-init.php:42
+msgctxt "post type singular name"
+msgid "Level Assessment Question"
+msgstr "Pergunta Teste de Nivelamento"
+
+#: ../la-init.php:43
+msgctxt "admin menu"
+msgid "Level Assessment Questions"
+msgstr "Perguntas Teste de Nivelamento"
+
+#: ../la-init.php:44
+msgctxt "add new on admin bar"
+msgid "Question"
+msgstr "Pergunta"
+
+#: ../la-init.php:45 ../la-init.php:83
+msgctxt "level assessment question"
+msgid "Add New"
+msgstr "Adicionar nova"
+
+#: ../la-init.php:46
+msgid "Add New Question"
+msgstr "Adicionar nova pergunta"
+
+#: ../la-init.php:47
+msgid "New Question"
+msgstr "Nova Pergunta"
+
+#: ../la-init.php:48
+msgid "Edit Question"
+msgstr "Editar pergunta"
+
+#: ../la-init.php:49
+msgid "View Question"
+msgstr "Visualizar pergunta"
+
+#: ../la-init.php:50
+msgid "All Questions"
+msgstr "Todas as perguntas"
+
+#: ../la-init.php:51
+msgid "Search Questions"
+msgstr "Buscar perguntas"
+
+#: ../la-init.php:52
+msgid "Parent Questions:"
+msgstr "Perguntas pais"
+
+#: ../la-init.php:53
+msgid "No questions found."
+msgstr "Nenhuma pergunta encontrada"
+
+#: ../la-init.php:54
+msgid "No questions found in Trash."
+msgstr "Nenhuma pergunta encontrada na lixeira"
+
+#: ../la-init.php:79
+msgctxt "post type general name"
+msgid "Level Information"
+msgstr "Informações sobre nível"
+
+#: ../la-init.php:80
+msgctxt "post type singular name"
+msgid "Level Information"
+msgstr "Informação sobre o nível"
+
+#: ../la-init.php:81
+msgctxt "admin menu"
+msgid "Level Information"
+msgstr "Informações sobre nível"
+
+#: ../la-init.php:82
+msgctxt "add new on admin bar"
+msgid "Information"
+msgstr "Informações"
+
+#: ../la-init.php:84
+msgid "Add New Information"
+msgstr "Adicionar nova informação"
+
+#: ../la-init.php:85
+msgid "New Information"
+msgstr "Nova informação"
+
+#: ../la-init.php:86
+msgid "Edit Information"
+msgstr "Editar informação"
+
+#: ../la-init.php:87
+msgid "View Information"
+msgstr "Visualizar informação"
+
+#: ../la-init.php:88
+msgid "All Information"
+msgstr "Todas as informações"
+
+#: ../la-init.php:89
+msgid "Search Information"
+msgstr "Buscar informação"
+
+#: ../la-init.php:90
+msgid "Parent Information:"
+msgstr "Informação pais"
+
+#: ../la-init.php:91
+msgid "No Information found."
+msgstr "Nenhuma informação encontrada"
+
+#: ../la-init.php:92
+msgid "No Information found in Trash."
+msgstr "Nenhuma informação encontrada na lixeira"
+
+#: ../la-init.php:125
+msgctxt "taxonomy general name"
+msgid "Age Groups"
+msgstr "Faixas etárias"
+
+#: ../la-init.php:126
+msgctxt "taxonomy singular name"
+msgid "Age Group"
+msgstr "Faixa etária"
+
+#: ../la-init.php:127
+msgid "Search Age Groups"
+msgstr "Buscar faixa etária"
+
+#: ../la-init.php:128
+msgid "Popular Age Groups"
+msgstr "Faixa etária popular"
+
+#: ../la-init.php:129
+msgid "All Age Groups"
+msgstr "Todas as faixas etárias"
+
+#: ../la-init.php:132
+msgid "Edit Age Group"
+msgstr "Editar faixa etária"
+
+#: ../la-init.php:133
+msgid "Update Age Group"
+msgstr "Atualizar faixa etária"
+
+#: ../la-init.php:134
+msgid "Add New Age Group"
+msgstr "Adicionar nova faixa etária"
+
+#: ../la-init.php:135
+msgid "New Age Group Name"
+msgstr "Nome da nova faixa etária"
+
+#: ../la-init.php:136
+msgid "Separate age groups with commas"
+msgstr "Separar faixas etárias com vírgula"
+
+#: ../la-init.php:137
+msgid "Add or remove age groups"
+msgstr "Adicionar ou remover faixa etária"
+
+#: ../la-init.php:138
+msgid "Choose from the most used age groups"
+msgstr "Escolher dentre faixas etárias mais usadas"
+
+#: ../la-init.php:139
+msgid "No age groups found."
+msgstr "Nenhuma faixa etária encontrada"
+
+#: ../la-init.php:140
+msgid "Age Groups"
+msgstr "Faixa etária"
+
+#: ../la-init.php:155
+msgctxt "taxonomy general name"
+msgid "Languages"
+msgstr "Idiomas"
+
+#: ../la-init.php:156
+msgctxt "taxonomy singular name"
+msgid "Language"
+msgstr "Idioma"
+
+#: ../la-init.php:157
+msgid "Search Languages"
+msgstr "Buscar idioma"
+
+#: ../la-init.php:158
+msgid "Popular Languages"
+msgstr "Idiomas populares"
+
+#: ../la-init.php:159
+msgid "All Languages"
+msgstr "Todos os idiomas"
+
+#: ../la-init.php:162
+msgid "Edit Language"
+msgstr "Editar idioma"
+
+#: ../la-init.php:163
+msgid "Update Language"
+msgstr "Atualizar idioma"
+
+#: ../la-init.php:164
+msgid "Add New Language"
+msgstr "Adicionar novo idioma"
+
+#: ../la-init.php:165
+msgid "New Language Name"
+msgstr "Novo nome de idioma"
+
+#: ../la-init.php:166
+msgid "Separate languages with commas"
+msgstr "Separar idiomas com vírgula"
+
+#: ../la-init.php:167
+msgid "Add or remove languages"
+msgstr "Adicionar ou remover idiomas"
+
+#: ../la-init.php:168
+msgid "Choose from the most used languages"
+msgstr "Escolher dentre os idiomas mais usados"
+
+#: ../la-init.php:169
+msgid "No languages found."
+msgstr "Nenhum idioma encontrado"
+
+#: ../la-init.php:170
+msgid "Languages"
+msgstr "Idiomas"
+
+#: ../la-init.php:186
+msgctxt "taxonomy general name"
+msgid "Levels"
+msgstr "Níveis"
+
+#: ../la-init.php:187
+msgctxt "taxonomy singular name"
+msgid "Level"
+msgstr "Nível"
+
+#: ../la-init.php:188
+msgid "Search Levels"
+msgstr "Buscar níveis"
+
+#: ../la-init.php:189
+msgid "Popular Levels"
+msgstr "Níveis populares"
+
+#: ../la-init.php:190
+msgid "All Levels"
+msgstr "Todos os níveis"
+
+#: ../la-init.php:193
+msgid "Edit Level"
+msgstr "Editar nível"
+
+#: ../la-init.php:194
+msgid "Update Level"
+msgstr "Atualizar Nível"
+
+#: ../la-init.php:195
+msgid "Add New Level"
+msgstr "Adicionar novo nível"
+
+#: ../la-init.php:196
+msgid "New Level Name"
+msgstr "Novo nome de nível"
+
+#: ../la-init.php:197
+msgid "Separate levels with commas"
+msgstr "Separar níveis com vírgula"
+
+#: ../la-init.php:198
+msgid "Add or remove levels"
+msgstr "Adicionar ou remover nível"
+
+#: ../la-init.php:199
+msgid "Choose from the most used levels"
+msgstr "Escolher dentre níveis mais usados"
+
+#: ../la-init.php:200
+msgid "No levels found."
+msgstr "Nenhum nível encontrado"
+
+#: ../la-init.php:201
+msgid "Levels"
+msgstr "Níveis"
+
+#: ../level-assessment.php:428
+msgid "Did you forget something?"
+msgstr "Você esqueceu alguma coisa?"
+
+#: ../level-assessment.php:432
+#, php-format
+msgctxt "%1$s represents a level"
+msgid "Hey my friend!<br>You should first do %1$s."
+msgstr "Ops,<br>Você deveria fazer primeiro %1$s."
+
+#: ../level-assessment.php:440
+msgid "Instructions"
+msgstr "Instruções"
+
+#: ../level-assessment.php:442
+#, php-format
+msgid "Testing your knowlege of %1$s"
+msgstr "Testando seu conhecimento de %1$s"
+
+#: ../level-assessment.php:454
+msgid "Information to Sign Up"
+msgstr "Informação para Matrícula"
+
+#: ../level-assessment.php:456
+#, php-format
+msgid "How to sign up for %1$s"
+msgstr "Como se matricular para %1$s"
+
+#: ../level-assessment.php:464
+msgid "The suggested times are not possible for you?"
+msgstr "Os horários disponíveis não se encaixam a você?"
+
+#: ../level-assessment.php:466
+msgid "Tell us a better time"
+msgstr "Qual horário melhor se encaixaria a você?"
+
+#: ../level-assessment.php:492
+#, php-format
+msgid "You answered %1$s correctly and made %2$s!"
+msgstr "Você acertou %1$s e teve %2$s!"
+
+#: ../level-assessment.php:493
+#, php-format
+msgid "%s question"
+msgid_plural "%s questions"
+msgstr[0] "%s pergunta"
+msgstr[1] "%s perguntas"
+
+#: ../level-assessment.php:494
+#, php-format
+msgid "%s mistake"
+msgid_plural "%s mistakes"
+msgstr[0] "%s erro"
+msgstr[1] "%s erros"
+
+#: ../level-assessment.php:512 ../level-assessment.php:520
+#: ../level-assessment.php:528 ../level-assessment.php:536
+msgid "Congratulations!"
+msgstr "Parabéns!"
+
+#: ../level-assessment.php:514
+#, php-format
+msgctxt "<br> is a line break"
+msgid ""
+"Congratulations!<br>You passed %1$s! This is the highest level we offer by "
+"now."
+msgstr ""
+"Parabéns!<br>Você passou para %1$s! Este é o nível máximo que oferecemos no "
+"momento."
+
+#: ../level-assessment.php:522
+#, php-format
+msgctxt "<br> is a line break"
+msgid "%1$s would be boring to you, you should study a higher level!"
+msgstr ""
+"%1$s seria entediante para você, você deveria estudar um nível superior."
+
+#: ../level-assessment.php:524 ../level-assessment.php:540
+#: ../level-assessment.php:548
+#, php-format
+msgid "I want to Sign Up for %1$s"
+msgstr "Eu quero me matricular para %1$s"
+
+#: ../level-assessment.php:530
+#, php-format
+msgctxt "<br> is a line break"
+msgid ""
+"Congratulations!<br>You have the knowlege of %1$s, you should study %2$s."
+msgstr ""
+"Parabéns!<br>Você já tem o conhecimento de %1$s, você deveria estudar %2$s."
+
+#: ../level-assessment.php:538
+#, php-format
+msgctxt "<br> is a line break"
+msgid "%1$s is our highest level by now. Sign up! You will learn someting!"
+msgstr ""
+"%1$s é nosso nível mais alto no momento. Matricule-se! Você poderá aprender "
+"muito!"
+
+#: ../level-assessment.php:544
+msgid "Sorry!"
+msgstr "Desculpe!"
+
+#: ../level-assessment.php:546
+#, php-format
+msgctxt "<br> is a line break"
+msgid "You should really study %1$s, because you are not yet ready for %2$s."
+msgstr ""
+"Você deveria estudar no %1$s, porque você ainda não está preparado para %2$s."
+
+#: ../level-assessment.php:579
+msgid "Question"
+msgstr "Pergunta"
+
+#: ../level-assessment.php:678
+msgid "Choose..."
+msgstr "Escolha..."
+
+#: ../level-assessment.php:757 ../level-assessment.php:776
+msgid "Which time fits you better?"
+msgstr "Qual horário melhor se encaixaria a você?"
+
+#: ../level-assessment.php:758
+msgid "Select ..."
+msgstr "Selecione…"
+
+#: ../level-assessment.php:784
+msgid "Email Address"
+msgstr "E-mail"
+
+#: ../level-assessment.php:787
+msgid "Submit"
+msgstr "Enviar"
+
+#~ msgctxt "<br> is a line break"
+#~ msgid "Congratulations!<br>You passed %1$s."
+#~ msgstr "Parabéns!<br>Você passou para %1$s."
+
+#~ msgctxt "<br> is a line break"
+#~ msgid "Congratulations!<br>You passed %1$s, you are now ready for %2$s."
+#~ msgstr "Parabéns!<br>Você passou %1$s, você agora está pronto para %2$s."
+
+#~ msgctxt "<br> is a line break"
+#~ msgid "Sorry<br>You are not yet ready for %1$s."
+#~ msgstr "Desculpe<br>Você ainda não está pronto para %1$s."
+
+#~ msgid "Next"
+#~ msgstr "Próximo"
+
+#~ msgctxt "eg. Information for English - Basic 1"
+#~ msgid "Information for %1$s - %2$s"
+#~ msgstr "Informações sobre %1$s - %2$s"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgctxt "<br> is a line break"
+#~ msgid "Congratulations!<br>You passed the Level."
+#~ msgstr "Parabéns!<br>Você passou de nível"
