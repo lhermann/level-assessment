@@ -19,6 +19,12 @@ function level_assessment_enqueue_scripts() {
 	wp_enqueue_script( 'level-assessment-js' );
 }
 
+// Add ajaxurl
+function la_footer_ajaxurl() {
+    echo "<script type='text/javascript'> var ajaxurl='".admin_url('admin-ajax.php')."'; </script>";
+}
+add_action('wp_footer', 'la_footer_ajaxurl');
+
 // Admin
 function joelmedia_admin_scripts() {
 	wp_enqueue_style( 'la_admin_css', plugins_url( 'css/la_admin.css', __FILE__ ), array( 'colors' ) );
