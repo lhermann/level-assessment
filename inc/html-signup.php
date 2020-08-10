@@ -18,7 +18,7 @@ $languages = get_terms( 'language', array(
 );
 ?>
 <section id="<?php echo $post->post_name; ?>" class="section-<?php echo $post->post_name; ?>">
-  <div class="container language-tabs">
+  <div class="language-tabs">
 
     <div class="text-center">
       <h1><?php the_title(); ?></h1>
